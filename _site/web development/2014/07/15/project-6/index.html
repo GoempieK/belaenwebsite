@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project 6</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Mijn naam is Nele Belaen. In september 2010 begon ik mijn loopbaan als logopediste. Na het voltooien van mijn middelbare studies in Barnum te Roeselare, begon ik in 2007 aan mijn opleiding aan de VIVES campus zuid (voorheen: KHBO) in Brugge. Ik behaalde in 2010 mijn diploma Bachelor in de logopedie.">
+    <link rel="canonical" href="http://www.nelebelaen.be/web%20development/2014/07/15/project-6/">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/font-awesome/css/icons.less">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!--    Custom google maps-->
+ 
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBlv_TOlWBExAtqEt_AG_20kQoaTRz_TFE&sensor=false&extension=.js'></script> 
+
+        
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 15,
+                    // remove all user interface of the map
+                    disableDefaultUI: 1,
+                    // remove dragging option
+                    draggable: 0,
+                    // disable zooming function
+                    disableDoubleClickZoom: 1,
+                    // disable zooming with scrollwheel
+                    scrollwheel: 0,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(50.848108, 3.124535), // New York
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType":"all","elementType":"geometry.stroke","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"simplified"},{"color":"#a31645"}]},{"featureType":"landscape","elementType":"all","stylers":[{"weight":"3.79"},{"visibility":"on"},{"color":"#ffecf0"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"landscape","elementType":"geometry.stroke","stylers":[{"visibility":"on"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"simplified"},{"color":"#a31645"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"saturation":"0"},{"lightness":"0"},{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"simplified"},{"color":"#d89ca8"}]},{"featureType":"poi.business","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"poi.business","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"saturation":"0"}]},{"featureType":"poi.business","elementType":"labels","stylers":[{"color":"#a31645"}]},{"featureType":"poi.business","elementType":"labels.icon","stylers":[{"visibility":"simplified"},{"lightness":"84"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#d89ca8"},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#fedce3"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(50.848108, 3.124535),
+                    map: map,
+                    title: 'Nele Belaen Logopedie'
+                });
+            }
+        </script>
+
+    
+    
+</head>
+
+    <body id="page-top" class="index">
+       <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Nele Belaen</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#over">Over</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#doelgroep">Doelgroep</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#werkwijze">Werkwijze</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#tarief">Tarief</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+        <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+<!--                    <img class="img-responsive" src="img/profile.png" alt="">-->
+                    <img class="img-circle" src="img/nelebelaen.jpg">
+                    <div class="intro-text">
+                        <span class="name">Nele Belaen</span>
+                        <hr class="star-light">
+                        <span class="skills">Logopedie</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- over sectie -->
+    <section id="over">
+       <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Over</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Mijn naam is Nele Belaen. In september 2010 begon ik mijn loopbaan als logopediste. Na het voltooien van mijn middelbare studies in Barnum te Roeselare, begon ik in 2007 aan mijn opleiding aan de VIVES                               campus Brugge (voorheen: KHBO). Ik behaalde in 2010 mijn diploma Bachelor in de logopedie.</p>
+                    
+                    
+                    
+                </div>
+                <div class="col-lg-4">
+                    <p>
+                    Na mijn hogere studies ging ik meteen aan de slag als zelfstandig logopediste in een groepspraktijk.</p>
+                    <p>In 2015 richtte ik mijn eigen zelfstandige praktijk op in de Kortrijksestraat 91 te Dadizele. Tot op heden combineer ik nog steeds beide jobs.
+                        Door regelmatige bijscholing en cursussen hou ik me up-to-date. Als lid van de Vlaamse Vereniging voor Logopedisten (VVL) blijf ik steeds op de hoogte van de wetgeving en de vernieuwingen in onze sector.                             Met mijn reeds opgedane werkervaring sta ik steeds tot uw dienst.
+                            Aarzel zeker niet om mij te contacteren!
+</p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="img-responsive, center-block" src="img/nelebelaen.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- doelgroep sectie -->
+    <section class="success" id="doelgroep">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Doelgroep</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                   <h3><p class="text-center">Kinderen</p></h3>
+                       <ul>
+                        <li><p>Vertraagde taal- en spraakontwikkeling</p></li>
+                        <li><p>Leermoeilijkheden (o.a. lezen, rekenen, spelling)</p></li>
+                        <li><p>Articulatiestoornissen</p></li>
+                        <li><p>Stemstoornissen</p></li>
+                        <li><p>Stotteren</p></li>
+                        <li><p>Afwijkende mondgewoonten (o.a. foutief slikken, mondademen)</p></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                   <h3><p class="text-center">Volwassenen</p></h3>
+                    
+                    <ul>
+                        <li><p>Articulatietraining</p></li>
+                        <li><p>Stemstoornissen</p></li>
+                        <li><p>Neurologische taal-, spraak en slikstoornissen</p></li>
+                        <li><p>Stotteren</p></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- werkwijze sectie -->
+    <section id="werkwijze">
+       <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Werkwijze</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <dl class="dl-horizontal">
+                      <dt><p>Aanmelding</p></dt>
+                      <dd><p>Men kan op eigen initiatief contact met mij opnemen of na doorverwijzing van de huisarts/geneesheer-specialist/school/CLB/ … . In samenwerking met school-CLB-ouders-paramedisch team-arts wordt er naar een passende behandeling gezocht en wordt de therapie opgestart.</p></dd>
+                      <dt><p>Onderzoek</p></dt>
+                      <dd><p>Het onderzoek wordt afgestemd op basis van de aangemelde problematiek. Elke stoornis vergt een ander onderzoek. Vooreerst wordt er steeds een intakegesprek ingepland. Indien het om een kind gaat, worden de ouders hierbij betrokken.</p>
+                        <p>Na dit gesprek wordt er beslist welke therapie het meest geschikt is. Een consultatie bij een geneesheer-specialist kan, afhankelijk van de problematiek, noodzakelijk zijn.</p></dd>
+                      <dt><p>Behandeling</p></dt>
+                      <dd><p>Van zodra alle documenten in orde zijn kan de behandeling van start gaan. De behandeling kan doorgaan op de praktijk zelf, op school of bij de patiënt thuis. Tijdstip en frequentie worden ook steeds in samenspraak vastgelegd. </p></dd>
+                    </dl>
+                    
+                </div>
+                
+        </div>
+    </section>
+    
+     <section class="success" id="tarief">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Tarief</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                  <p>Er wordt gewerkt met de officiële tarieven vastgelegd door het RIZIV.
+                      Heel wat stoornissen worden reeds terugbetaald door de mutualiteiten. Afhankelijk van bij welke instelling u bent aangesloten verschilt het bedrag soms van terugbetaling.</p><p> Doorgaans worden sessies die vallen onder de verplichte verzekering voor 75% terugbetaald. De aanvullende verzekering vergoedt u voor 50%.
+</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Contact Section -->
+<section id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2>Contact</h2>
+				<hr class="star-primary">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<form  action="//formspree.io/you@email.com" method="POST" name="sentMessage" id="contactForm" novalidate>
+					<div class="row control-group">
+						<div class="form-group col-xs-12 floating-label-form-group controls">
+							<label>Naam</label>
+							<input type="text" name="name" class="form-control" placeholder="Naam" id="name" required data-validation-required-message="Gelieve uw naam in te vullen.">
+							<p class="help-block text-danger"></p>
+						</div>
+					</div>
+					<div class="row control-group">
+						<div class="form-group col-xs-12 floating-label-form-group controls">
+							<label>Email Adres</label>
+							<input type="email" name="_replyto" class="form-control" placeholder="Email Adres" id="email" required data-validation-required-message="Gelieve uw email adres in te vullen.">
+							<p class="help-block text-danger"></p>
+						</div>
+					</div>
+					<div>
+						<input type="hidden"  name="_subject" value="New submission!">
+						<input type="text" name="_gotcha" style="display:none" />
+					</div>
+					<div class="row control-group">
+						<div class="form-group col-xs-12 floating-label-form-group controls">
+							<label>Bericht</label>
+							<textarea rows="5" name="message" class="form-control" placeholder="Bericht" id="message" required data-validation-required-message="Gelieve een bericht na te laten."></textarea>
+							<p class="help-block text-danger"></p>
+						</div>
+					</div>
+					<br>
+					<div id="success"></div>
+					<div class="row">
+						<div class="form-group col-xs-12">
+							<button type="submit" class="btn btn-success btn-lg">Verstuur</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+    
+    
+    <!--google maps sectie-->
+    <section id="googlemap">
+        
+        <div id="map">test</div>
+   </section>
+      
+        <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-6">
+                        <h3>Adres</h3>
+                        <p>
+                            
+                                Kortrijksestraat 91 <br>
+		                    
+                                8890 Dadizele <br>
+		                    
+                                <a href="tel:+32499283420">0499 28 34 20</a> <br>
+		                    
+                        </p>
+                    </div>
+                    <div class="footer-col col-md-6">
+                        <h3>Facebook</h3>
+                        <ul class="list-inline">
+                            
+                            <li>
+                                <a href="" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+		                    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Nele Belaen 2015
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+     <!-- Portfolio Modals -->
+ 
+    <div class="portfolio-modal modal fade" id="portfolioModal-1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project 1</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="image-alt">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal-2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project 2</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="image-alt">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal-3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project 3</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="image-alt">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal-6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project 6</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="image-alt">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal-4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project 4</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="image-alt">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal-5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project 5</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="image-alt">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- jQuery Version 1.11.0 -->
+    <script src="/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/classie.js"></script>
+    <script src="/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/js/jqBootstrapValidation.js"></script>
+    
+    <script src="/js/contact_me_static.js"></script>
+    
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/freelancer.js"></script>
+
+    </body>
+</html>
